@@ -1,5 +1,9 @@
 {% extends 'base.html'%}
 {% block content %} 
+<header>
+    {% load static %} 
+    <link rel="stylesheet" type = "text/css" href="{% static 'contactstyle.css'%}">
+</header>
 <h1>Contact Information</h1>
 <ul>
     <li>Email: dylanhwang@berkeley.edu</li>

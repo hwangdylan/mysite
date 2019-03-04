@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content%}
+<header>
+{% load static %} 
+<link rel="stylesheet" type = "text/css" href="{% static 'cs186style.css'%}">
+<link rel="stylesheet" type = "text/css" href="{% static 'notes.css'%}">
+</header>
+<h1>Notes for CS186: Database</h1>
+{% include 'cs186.html'%}
+{% include 'bottom.html' %}
+{%endblock%}

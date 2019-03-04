@@ -1,6 +1,26 @@
 {% extends 'base.html' %}
 {% block content%}
+<head>
+{% load static %} 
+<link rel="stylesheet" type = "text/css" href="{% static 'notes.css'%}">
+</head>
 <p>There are many classes that I have taken. Here are a few:</p>
+<p>Below are the class notes for a few of the classes that I have taken. There are sometimes
+issues with how LaTeX converts to HTML, so it may not be properly rendered. Because of that, I
+if you would prefer to view the pdf version, it will be linked as well </p>
+<h5>PDF Version</h5>
+<ul class="notes">
+    <li class="notes"><a href="https://www.dropbox.com/s/68t7y08i8vuylq8/CS186Main.pdf?dl=0">CS186</a></li>
+    <li class="notes"><a href="https://www.dropbox.com/s/7ge48i38sq0t25f/CS188Main.pdf?dl=0">CS188</a></li>
+    <li class="notes"><a
+            href="https://www.dropbox.com/s/iym01kdqz6blui6/CS61CMain.pdf?dl=0">CS61C Lecture
+            Notes</a></li>
+    <li class="notes"><a href="https://www.dropbox.com/s/n75tf1c5224z5hz/KRNotesMain.pdf?dl=0">C Notes </a></li>
+</ul>
+<h5>Webpage</h5>
+<ul class="notes">
+    <li class="notes"><a href="cs186/">CS186</a></li>
+</ul>
 
 {% include 'bottom.html' %}
 {%endblock%}

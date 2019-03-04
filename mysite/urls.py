@@ -18,7 +18,7 @@ from django.urls import path
 from home.views import home_view
 from contact.views import contact_view, contact_create_view
 from about.views import about_view 
-from classes.views import classes_view 
+from classes.views import classes_view, cs186_view 
 
 urlpatterns = [
     path('', home_view), 
@@ -26,5 +26,6 @@ urlpatterns = [
     path('contactme/', contact_create_view), 
     path('about/', about_view), 
     path('classes/', classes_view), 
+    path('classes/cs186/', cs186_view), 
     path('admin/', admin.site.urls),
 ]

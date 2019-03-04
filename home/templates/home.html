@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% block content%}
 <header>
+    {% load static %} 
+    <link rel="stylesheet" type = "text/css" href="{% static 'style.css'%}">
 <h1>Dylan Hwang</h1>
 </header>
 <img src="static/me.jpg" width="400" height="300" alt="picture of me" class="center">
