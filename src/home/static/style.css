@@ -1,0 +1,168 @@
+/* Style the header */
+header {
+  background-color: #666;
+  opacity: .9;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  border: 2px #666;
+  border-radius: 25px;
+}
+.center {
+    text-align:center;
+}
+.title{
+  display: flex;
+  justify-content: space-between;  
+}
+.red-text{
+  color: red;
+}
+.center{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.centerText{
+	text-align:center;
+	border: 3px solid blue;
+	background-color: lightblue;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+  background: #FFE4C4
+}
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+div {
+  width: 300px;
+  border: 25px solid lightblue;
+  padding: 25px;
+  margin: 25px;
+}
+body {
+  background-image:url("me.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  /*background-size: 3000px 1000px;*/
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+}
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+  margin-top: 60px;
+  padding: 10px 20px;
+}
+
+div.movement {
+/*  width: 100px;
+  height: 50px;
+  background: coral;
+*/  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 2s infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 1000px;}
+}
+div.movement2 {
+/*  width: 100px;
+  height: 50px;
+  background: coral;
+*/  position: relative;
+  -webkit-animation: mymove2 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove2 2s infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove2 {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+@keyframes mymove2 {
+  from {left: 1000px;}
+  to {left: 0px;}
+}
+.blinking{
+    animation:blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.nav {
+  float: left;
+}
+
+li.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.nav a:hover {
+  background-color: #111;
+}
+li.bottom {
+  float: left;
+}
+
+li.bottom{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
